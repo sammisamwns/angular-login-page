@@ -1,0 +1,73 @@
+body, .dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #18122B 0%, #393053 100%);
+  color: #F7F7FB;
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.dashboard-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-card {
+  background: #23213A;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-card h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #F7F7FB;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.01em;
+}
+
+.brand {
+  color: #B5179E;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-shadow: 0 2px 8px #560bad44;
+}
+
+.dashboard-subtitle {
+  color: #A3A3C2;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.dashboard-divider {
+  width: 80%;
+  border: none;
+  border-top: 1.5px solid #393053;
+  margin: 1.2rem 0 1.5rem 0;
+}
+
+.dashboard-logout-btn {
+  width: 100%;
+  padding: 0.7rem 0;
+  background: linear-gradient(90deg, #B5179E 0%, #560BAD 100%);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.08rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 #560bad33;
+  transition: background 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.01em;
+}
+
+.dashboard-logout-btn:hover {
+  background: linear-gradient(90deg, #560BAD 0%, #B5179E 100%);
+  box-shadow: 0 4px 16px 0 #560bad55;
+}

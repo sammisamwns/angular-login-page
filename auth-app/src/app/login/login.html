@@ -1,0 +1,31 @@
+<div class="login-container">
+  <div class="login-card no-bg">
+    <div class="login-header">
+      <h2>Welcome to the World of <span class="brand">Sammisam</span></h2>
+      <p class="subtitle">Sign in to your account</p>
+    </div>
+    <form (ngSubmit)="login()" autocomplete="off">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input id="username" [(ngModel)]="username" name="username" required placeholder="Enter your username" autofocus>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" type="password" [(ngModel)]="password" name="password" required placeholder="Enter your password">
+      </div>
+      <button type="submit" class="login-btn" [class.shake]="shakeButton">Login</button>
+    </form>
+    <div class="login-footer">
+      <small>Demo: <b>admin</b> / <b>admin123</b></small>
+    </div>
+  </div>
+
+  <!-- Modal for incorrect password -->
+  <div class="modal-backdrop" *ngIf="errorMessage">
+    <div class="modal">
+      <h3>Login Failed</h3>
+      <p>{{ errorMessage }}</p>
+      <button class="modal-close-btn" (click)="closeModal()">Close</button>
+    </div>
+  </div>
+</div>
